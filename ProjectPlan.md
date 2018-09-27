@@ -5,65 +5,66 @@
 - [ ] Add link to list of indie projects in student repo.
 - [ ] Complete Problem Statement
 - [ ] Determine possible Web Services or APIs to use
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 4
 - [ ] Write project plan
 - [ ] Screen design mock ups
 - [ ] Checkpoint 1: Problem statement, project plan, screen design, time log pushed to GitHub. 
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 5
 - [ ] Database designed and created
 - [ ] Create user DAO
 - [ ] Log4J
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 6
 - [ ] DAO implemented with Hibernate
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 7
 - [ ] Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J 
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 8
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 9
 - [ ] Deployment to AWS
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 8
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 9
-- [ ] Weekly journal entry
 - [ ] Checkpoint 3: Deployed to AWS, JSP that displays data from the database is implemented(profiles). 
+- [ ] Time Log!!!!!!!
 
 ### Week 10
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 11 - Team project work week
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 12 - Team project due
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 13
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 
 ### Week 14
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 - [ ] Create final presentation
 
 ### Week 15
 - [ ] Final Presentation
 - [ ] Finalize all documentation
 - [ ] Code quality check
+- [ ] Time Log!!!!!!!
 
 ### Week 16
-- [ ] Weekly journal entry
+- [ ] Time Log!!!!!!!
 - [ ] Final touches before code complete
 
 
