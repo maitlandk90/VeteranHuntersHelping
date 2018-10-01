@@ -5,12 +5,12 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity(name = "User")
-@Table(name = "user")
+@Table(name = "User")
 public class User {
     private String username;
     private String password;
     private String rank;
-    private int Equipment;
+    private int equipment;
 
     private int id;
 
@@ -24,7 +24,6 @@ public class User {
         this.password = password;
         this.rank = rank;
         this.equipment = equipment;
-        this.username = username;
     }
 
     public String getUsername() {
@@ -52,11 +51,11 @@ public class User {
     }
 
     public int getEquipment() {
-        return Equipment;
+        return equipment;
     }
 
     public void setEquipment(int equipment) {
-        Equipment = equipment;
+        equipment = equipment;
     }
 
     public int getId() {
