@@ -12,5 +12,16 @@
 </head>
 <body>
 
+<%@ include file="links.jsp"%>
+
+
+<form>
+    <input type="text" name="Username" placeholder="Username"><br />
+    <input type="text" name="Email" placeholder="Email"><br />
+    <input type="text" name="Password" placeholder="Password"><br />
+    <input type="text" name="Re-Password" placeholder="Re-enter Password"><br />
+    <input type="submit" value="Submit">
+</form>
+
 </body>
 </html>
