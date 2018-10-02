@@ -4,15 +4,26 @@ import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
+/**
+ *
+ */
 @Entity(name = "User")
 @Table(name = "User")
 public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native", strategy = "native")
+    private int id;
+
+    @Column(name = "UserName")
     private String username;
+    @Column(name = "Password")
     private String password;
+    @Column(name = "Rank")
     private String rank;
+    @Column(name = "Equipment")
     private int equipment;
 
-    private int id;
 
 
     public User() {
