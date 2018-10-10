@@ -22,8 +22,6 @@
     <%@ include file="links.jsp"%>
 
 
-    <h2>Hello World!</h2>
-
     <a class="twitter-timeline" data-width="250" data-height="550" href="https://twitter.com/monsterhunter?ref_src=twsrc%5Etfw">Tweets by monsterhunter</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 </body>
