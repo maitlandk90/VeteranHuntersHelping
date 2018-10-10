@@ -3,6 +3,8 @@ package edu.matc.entity;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  *
@@ -23,7 +25,6 @@ public class User {
     private String rank;
     @Column(name = "Equipment")
     private int equipment;
-
 
 
     public User() {
