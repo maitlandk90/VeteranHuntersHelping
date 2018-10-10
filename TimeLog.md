@@ -9,3 +9,4 @@
 | 10/1/18| Created Database that will hold tables for project as well as created basic tables to begin testing | 1.5 | Created a test database as well  |
 | 10/1/18| Created User bean | 1.0 | Files not being recognized as java classes?  |
 | 10/1/18| Start of website working | 1.5 | Bean working now, Jsp pages up but no content  |
+| 10/9/18| Begin making bean classes for equipment | 15 mins | will be updated as tables and database progress  |
