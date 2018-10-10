@@ -1,8 +1,19 @@
 package edu.matc.entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
+
+@Entity(name = "Heads")
+@Table(name = "Heads")
 public class Heads {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
+    @Column(name = "name")
     private String name;
 
     public Heads(){}
