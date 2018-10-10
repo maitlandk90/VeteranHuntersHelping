@@ -1,9 +1,22 @@
 package edu.matc.entity;
 
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
+
+@Entity(name = "Messages")
+@Table(name = "Messages")
 public class Messages {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
+    @GenericGenerator(name = "native", strategy = "native")
     private int id;
+    @Column(name = "ToUser")
     private String toUser;
+    @Column(name = "FromUser")
     private String fromUser;
+    @Column(name = "Message")
     private String message;
 
     public Messages(){}
