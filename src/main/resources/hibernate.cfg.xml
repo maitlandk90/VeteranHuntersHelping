@@ -24,6 +24,8 @@
         <mapping class="edu.matc.entity.Waists"/>
         <mapping class="edu.matc.entity.Weapons"/>
         <mapping class="edu.matc.entity.Messages"/>
+        <mapping class="edu.matc.entity.Equipment"/>
+
 
 
 
