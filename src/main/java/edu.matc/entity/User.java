@@ -25,6 +25,7 @@ public class User {
     private int equipment;
 
 
+
     public User() {
 
     }

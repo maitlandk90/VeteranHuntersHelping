@@ -13,7 +13,7 @@ public class Legs {
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
 
-    @Column(name = "name")
+    @Column(name = "Name")
     private String name;
 
     public Legs(){}
