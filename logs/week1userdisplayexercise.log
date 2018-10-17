@@ -1,1 +1,6 @@
 [DEBUG] 2018-10-15 21:59:55.002 [main] EquipmentDao - The list of hunters equipment sets [edu.matc.entity.Equipment@5a6482a9, edu.matc.entity.Equipment@746cd757, edu.matc.entity.Equipment@ae372b9, edu.matc.entity.Equipment@2098d37d]
+[ERROR] 2018-10-16 22:04:05.774 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-10-16 22:04:05.918 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-10-16 22:05:31.357 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[ERROR] 2018-10-16 22:05:31.409 [main] Database - java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+[DEBUG] 2018-10-16 22:07:20.457 [main] EquipmentDao - The list of hunters equipment sets [edu.matc.entity.Equipment@6dcd5639, edu.matc.entity.Equipment@3b36e000, edu.matc.entity.Equipment@333cb916, edu.matc.entity.Equipment@629ae7e]
