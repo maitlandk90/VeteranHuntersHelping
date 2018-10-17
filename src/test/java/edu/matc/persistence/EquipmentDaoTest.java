@@ -47,16 +47,20 @@ public class EquipmentDaoTest {
         equipmentDao.insert(newEquipment);
 
         newEquipment = equipmentDao.getById(5);
-
-        Weapons weapon = weaponsDao.getById(newEquipment.getWeaponID());
+        Weapons weapon = new Weapons();
+        weapon = weaponsDao.getById(newEquipment.getWeaponID());
 
         assertEquals("Iron SnS", weapon.getName());
     }
 
     @Test
     void deleteSuccess() {
-        equipmentDao.delete(equipmentDao.getById(2));
-        assertNull(equipmentDao.getById(2));
+        Equipment armorSetToDelete = equipmentDao.getById(2);
+        equipmentDao.delete(armorSetToDelete);
+
+        Equipment deletedArmorSet = equipmentDao.getById(2);
+
+        assertNull(deletedArmorSet);
     }
 
     @Test
