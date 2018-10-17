@@ -11,3 +11,6 @@
 | 10/1/18| Start of website working | 1.5 | Bean working now, Jsp pages up but no content  |
 | 10/9/18| Begin making bean classes for equipment | 15 mins | will be updated as tables and database progress  |
 | 10/9/18| Set up Hibernate annotations | 15 mins |  |
+| 10/15/18| Started Dao testing | 2.0 | Not done yet |
+| 10/16/18| Dao tests need major work | 2.0 | seem to be working now |
+| 10/16/18| Set AWS for indie project | 2.0 | ran into a number of back and forth with DB passwords |
