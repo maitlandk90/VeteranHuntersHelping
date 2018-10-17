@@ -16,323 +16,225 @@
     <schema id="10" parent="1" name="test_week4book"/>
     <schema id="11" parent="1" name="VetHunHelping"/>
     <schema id="12" parent="1" name="week4book"/>
-    <table id="13" parent="2" name="Arms"/>
-    <table id="14" parent="2" name="Chests"/>
-    <table id="15" parent="2" name="Equipment"/>
-    <table id="16" parent="2" name="Heads"/>
-    <table id="17" parent="2" name="Legs"/>
-    <table id="18" parent="2" name="Messages"/>
-    <table id="19" parent="2" name="User"/>
-    <table id="20" parent="2" name="Vet/Nov Ref Table"/>
-    <table id="21" parent="2" name="Waists"/>
-    <table id="22" parent="2" name="Weapons"/>
-    <column id="23" parent="13" name="Id">
+    <schema id="13" parent="1" name="week5BookSeller"/>
+    <table id="14" parent="2" name="Arms"/>
+    <table id="15" parent="2" name="Chests"/>
+    <table id="16" parent="2" name="Equipment"/>
+    <table id="17" parent="2" name="Heads"/>
+    <table id="18" parent="2" name="Legs"/>
+    <table id="19" parent="2" name="Messages"/>
+    <table id="20" parent="2" name="User"/>
+    <table id="21" parent="2" name="Vet/Nov Ref Table"/>
+    <table id="22" parent="2" name="Waists"/>
+    <table id="23" parent="2" name="Weapons"/>
+    <column id="24" parent="14" name="Id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="24" parent="13" name="Name">
+    <column id="25" parent="14" name="Name">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="25" parent="13" name="PRIMARY">
+    <key id="26" parent="14" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="26" parent="14" name="Id">
+    <column id="27" parent="15" name="Id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="27" parent="14" name="Name">
+    <column id="28" parent="15" name="Name">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="28" parent="14" name="PRIMARY">
+    <key id="29" parent="15" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="29" parent="15" name="Id">
+    <column id="30" parent="16" name="Id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="30" parent="15" name="WeaponId">
+    <column id="31" parent="16" name="WeaponId">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="31" parent="15" name="HeadId">
+    <column id="32" parent="16" name="HeadId">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="32" parent="15" name="ArmsId">
+    <column id="33" parent="16" name="ArmsId">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="33" parent="15" name="ChestId">
+    <column id="34" parent="16" name="ChestId">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="34" parent="15" name="WaistId">
+    <column id="35" parent="16" name="WaistId">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="35" parent="15" name="LegsId">
+    <column id="36" parent="16" name="LegsId">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="36" parent="15" name="Equipment_fk0">
-      <ColNames>WeaponId</ColNames>
-    </index>
-    <index id="37" parent="15" name="Equipment_fk1">
-      <ColNames>HeadId</ColNames>
-    </index>
-    <index id="38" parent="15" name="Equipment_fk2">
-      <ColNames>ArmsId</ColNames>
-    </index>
-    <index id="39" parent="15" name="Equipment_fk3">
-      <ColNames>ChestId</ColNames>
-    </index>
-    <index id="40" parent="15" name="Equipment_fk4">
-      <ColNames>WaistId</ColNames>
-    </index>
-    <index id="41" parent="15" name="Equipment_fk5">
-      <ColNames>LegsId</ColNames>
-    </index>
-    <key id="42" parent="15" name="PRIMARY">
+    <key id="37" parent="16" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="43" parent="15" name="Equipment_fk0">
-      <ColNames>WeaponId</ColNames>
-      <RefSchemaName>test_VetHunHelping</RefSchemaName>
-      <RefTableName>Weapons</RefTableName>
-      <RefColNames>Id</RefColNames>
-    </foreign-key>
-    <foreign-key id="44" parent="15" name="Equipment_fk1">
-      <ColNames>HeadId</ColNames>
-      <RefSchemaName>test_VetHunHelping</RefSchemaName>
-      <RefTableName>Heads</RefTableName>
-      <RefColNames>Id</RefColNames>
-    </foreign-key>
-    <foreign-key id="45" parent="15" name="Equipment_fk2">
-      <ColNames>ArmsId</ColNames>
-      <RefSchemaName>test_VetHunHelping</RefSchemaName>
-      <RefTableName>Arms</RefTableName>
-      <RefColNames>Id</RefColNames>
-    </foreign-key>
-    <foreign-key id="46" parent="15" name="Equipment_fk3">
-      <ColNames>ChestId</ColNames>
-      <RefSchemaName>test_VetHunHelping</RefSchemaName>
-      <RefTableName>Chests</RefTableName>
-      <RefColNames>Id</RefColNames>
-    </foreign-key>
-    <foreign-key id="47" parent="15" name="Equipment_fk4">
-      <ColNames>WaistId</ColNames>
-      <RefSchemaName>test_VetHunHelping</RefSchemaName>
-      <RefTableName>Waists</RefTableName>
-      <RefColNames>Id</RefColNames>
-    </foreign-key>
-    <foreign-key id="48" parent="15" name="Equipment_fk5">
-      <ColNames>LegsId</ColNames>
-      <RefSchemaName>test_VetHunHelping</RefSchemaName>
-      <RefTableName>Legs</RefTableName>
-      <RefColNames>Id</RefColNames>
-    </foreign-key>
-    <column id="49" parent="16" name="Id">
+    <column id="38" parent="17" name="Id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="50" parent="16" name="Name">
+    <column id="39" parent="17" name="Name">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="51" parent="16" name="PRIMARY">
+    <key id="40" parent="17" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="52" parent="17" name="Id">
+    <column id="41" parent="18" name="Id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="53" parent="17" name="Name">
+    <column id="42" parent="18" name="Name">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="54" parent="17" name="PRIMARY">
+    <key id="43" parent="18" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="55" parent="18" name="Id">
+    <column id="44" parent="19" name="Id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="56" parent="18" name="ToUser">
+    <column id="45" parent="19" name="ToUser">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="57" parent="18" name="FromUser">
+    <column id="46" parent="19" name="FromUser">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="58" parent="18" name="Message">
+    <column id="47" parent="19" name="Message">
       <Position>4</Position>
       <DataType>varchar(140)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="59" parent="18" name="Messages_fk0">
-      <ColNames>ToUser</ColNames>
-    </index>
-    <index id="60" parent="18" name="Messages_fk1">
-      <ColNames>FromUser</ColNames>
-    </index>
-    <key id="61" parent="18" name="PRIMARY">
+    <key id="48" parent="19" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="62" parent="18" name="Messages_fk0">
-      <ColNames>ToUser</ColNames>
-      <RefSchemaName>test_VetHunHelping</RefSchemaName>
-      <RefTableName>User</RefTableName>
-      <RefColNames>Id</RefColNames>
-    </foreign-key>
-    <foreign-key id="63" parent="18" name="Messages_fk1">
-      <ColNames>FromUser</ColNames>
-      <RefSchemaName>test_VetHunHelping</RefSchemaName>
-      <RefTableName>User</RefTableName>
-      <RefColNames>Id</RefColNames>
-    </foreign-key>
-    <column id="64" parent="19" name="Id">
+    <column id="49" parent="20" name="Id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="65" parent="19" name="UserName">
+    <column id="50" parent="20" name="UserName">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="66" parent="19" name="Password">
+    <column id="51" parent="20" name="Password">
       <Position>3</Position>
       <DataType>varchar(30)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="67" parent="19" name="Rank">
+    <column id="52" parent="20" name="Rank">
       <Position>4</Position>
       <DataType>varchar(15)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="68" parent="19" name="Equipment">
+    <column id="53" parent="20" name="Equipment">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="69" parent="19" name="UserName">
+    <index id="54" parent="20" name="UserName">
       <ColNames>UserName</ColNames>
       <Unique>1</Unique>
     </index>
-    <index id="70" parent="19" name="User_fk0">
-      <ColNames>Equipment</ColNames>
-    </index>
-    <key id="71" parent="19" name="PRIMARY">
+    <key id="55" parent="20" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="72" parent="19" name="UserName">
+    <key id="56" parent="20" name="UserName">
       <ColNames>UserName</ColNames>
       <UnderlyingIndexName>UserName</UnderlyingIndexName>
     </key>
-    <foreign-key id="73" parent="19" name="User_fk0">
-      <ColNames>Equipment</ColNames>
-      <RefSchemaName>test_VetHunHelping</RefSchemaName>
-      <RefTableName>Equipment</RefTableName>
-      <RefColNames>Id</RefColNames>
-    </foreign-key>
-    <column id="74" parent="20" name="VeteranId">
+    <column id="57" parent="21" name="VeteranId">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="75" parent="20" name="NoviceId">
+    <column id="58" parent="21" name="NoviceId">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <index id="76" parent="20" name="Vet/Nov Ref Table_fk0">
-      <ColNames>VeteranId</ColNames>
-    </index>
-    <index id="77" parent="20" name="Vet/Nov Ref Table_fk1">
-      <ColNames>NoviceId</ColNames>
-    </index>
-    <foreign-key id="78" parent="20" name="Vet/Nov Ref Table_fk0">
-      <ColNames>VeteranId</ColNames>
-      <RefSchemaName>test_VetHunHelping</RefSchemaName>
-      <RefTableName>User</RefTableName>
-      <RefColNames>Id</RefColNames>
-    </foreign-key>
-    <foreign-key id="79" parent="20" name="Vet/Nov Ref Table_fk1">
-      <ColNames>NoviceId</ColNames>
-      <RefSchemaName>test_VetHunHelping</RefSchemaName>
-      <RefTableName>User</RefTableName>
-      <RefColNames>Id</RefColNames>
-    </foreign-key>
-    <column id="80" parent="21" name="Id">
+    <column id="59" parent="22" name="Id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="81" parent="21" name="Name">
+    <column id="60" parent="22" name="Name">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="82" parent="21" name="PRIMARY">
+    <key id="61" parent="22" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="83" parent="22" name="Id">
+    <column id="62" parent="23" name="Id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="84" parent="22" name="Name">
+    <column id="63" parent="23" name="Name">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="85" parent="22" name="PRIMARY">
+    <key id="64" parent="23" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>Id</ColNames>
       <Primary>1</Primary>
