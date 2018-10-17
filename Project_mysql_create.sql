@@ -57,14 +57,14 @@ CREATE TABLE `Arms` (
 	`Name` varchar(50) NOT NULL,
 	PRIMARY KEY (`Id`)
 );
-#ALTER TABLE `User` ADD CONSTRAINT `User_fk0` FOREIGN KEY (`Equipment`) REFERENCES `Equipment`(`Id`);
-#ALTER TABLE `Vet/Nov Ref Table` ADD CONSTRAINT `Vet/Nov Ref Table_fk0` FOREIGN KEY (`VeteranId`) REFERENCES `User`(`Id`);
-#ALTER TABLE `Vet/Nov Ref Table` ADD CONSTRAINT `Vet/Nov Ref Table_fk1` FOREIGN KEY (`NoviceId`) REFERENCES `User`(`Id`);
-#ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk0` FOREIGN KEY (`WeaponId`) REFERENCES `Weapons`(`Id`);
-#ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk1` FOREIGN KEY (`HeadId`) REFERENCES `Heads`(`Id`);
-#ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk2` FOREIGN KEY (`ArmsId`) REFERENCES `Arms`(`Id`);
-#ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk3` FOREIGN KEY (`ChestId`) REFERENCES `Chests`(`Id`);
-#ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk4` FOREIGN KEY (`WaistId`) REFERENCES `Waists`(`Id`);
-#ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk5` FOREIGN KEY (`LegsId`) REFERENCES `Legs`(`Id`);
-#ALTER TABLE `Messages` ADD CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User`(`Id`);
-#ALTER TABLE `Messages` ADD CONSTRAINT `Messages_fk1` FOREIGN KEY (`FromUser`) REFERENCES `User`(`Id`);
+ALTER TABLE `User` ADD CONSTRAINT `User_fk0` FOREIGN KEY (`Equipment`) REFERENCES `Equipment`(`Id`);
+ALTER TABLE `Vet/Nov Ref Table` ADD CONSTRAINT `Vet/Nov Ref Table_fk0` FOREIGN KEY (`VeteranId`) REFERENCES `User`(`Id`);
+ALTER TABLE `Vet/Nov Ref Table` ADD CONSTRAINT `Vet/Nov Ref Table_fk1` FOREIGN KEY (`NoviceId`) REFERENCES `User`(`Id`);
+ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk0` FOREIGN KEY (`WeaponId`) REFERENCES `Weapons`(`Id`);
+ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk1` FOREIGN KEY (`HeadId`) REFERENCES `Heads`(`Id`);
+ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk2` FOREIGN KEY (`ArmsId`) REFERENCES `Arms`(`Id`);
+ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk3` FOREIGN KEY (`ChestId`) REFERENCES `Chests`(`Id`);
+ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk4` FOREIGN KEY (`WaistId`) REFERENCES `Waists`(`Id`);
+ALTER TABLE `Equipment` ADD CONSTRAINT `Equipment_fk5` FOREIGN KEY (`LegsId`) REFERENCES `Legs`(`Id`);
+ALTER TABLE `Messages` ADD CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User`(`Id`);
+ALTER TABLE `Messages` ADD CONSTRAINT `Messages_fk1` FOREIGN KEY (`FromUser`) REFERENCES `User`(`Id`);
