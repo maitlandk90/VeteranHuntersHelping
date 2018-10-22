@@ -54,3 +54,4 @@
 [DEBUG] 2018-10-21 22:57:11.653 [main] EquipmentDao - The list of hunters equipment sets [edu.matc.entity.Equipment@29c2c826, edu.matc.entity.Equipment@3350ebdd, edu.matc.entity.Equipment@6818d900, edu.matc.entity.Equipment@149f5761]
 [DEBUG] 2018-10-21 23:13:50.226 [main] EquipmentDao - The list of hunters equipment sets [edu.matc.entity.Equipment@365553de, edu.matc.entity.Equipment@34a0ef00, edu.matc.entity.Equipment@5c0f79f0, edu.matc.entity.Equipment@21fdfefc]
 [DEBUG] 2018-10-21 23:35:08.400 [main] EquipmentDao - The list of hunters equipment sets [edu.matc.entity.Equipment@77cb9cd1, edu.matc.entity.Equipment@971e903, edu.matc.entity.Equipment@35636217, edu.matc.entity.Equipment@1549bba7]
+[DEBUG] 2018-10-21 23:43:36.702 [main] EquipmentDao - The list of hunters equipment sets [edu.matc.entity.Equipment@24361cfc, edu.matc.entity.Equipment@34e20e6b, edu.matc.entity.Equipment@15ac59c2, edu.matc.entity.Equipment@7a7d1b47]
