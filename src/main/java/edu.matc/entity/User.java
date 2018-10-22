@@ -21,20 +21,26 @@ public class User {
     private String password;
     @Column(name = "Rank")
     private String rank;
-    @Column(name = "Equipment")
-    private int equipment;
 
+    @OneToOne(mappedBy = "hunter", fetch = FetchType.LAZY)
+    private Equipment armorSet;
 
+    public Equipment getArmorSet() {
+        return armorSet;
+    }
+
+    public void setArmorSet(Equipment armorSet) {
+        this.armorSet = armorSet;
+    }
 
     public User() {
 
     }
 
-    public User(String username, String password, String rank, int equipment) {
+    public User(String username, String password, String rank) {
         this.username = username;
         this.password = password;
         this.rank = rank;
-        this.equipment = equipment;
     }
 
     public String getUsername() {
@@ -59,14 +65,6 @@ public class User {
 
     public void setRank(String rank) {
         this.rank = rank;
-    }
-
-    public int getEquipment() {
-        return equipment;
-    }
-
-    public void setEquipment(int equipment) {
-        equipment = equipment;
     }
 
     public int getId() {
