@@ -29,4 +29,4 @@ INSERT INTO User VALUE (4, 'Silent3mpty', 'holdem09', 'Veteran');
 INSERT INTO Equipment VALUE (1, 1, 3, 3, 3, 3, 3, 3);
 INSERT INTO Equipment VALUE (2, 2, 2, 1, 1, 1, 1, 1);
 INSERT INTO Equipment VALUE (3, 3, 1, 2, 2, 2, 2, 2);
-INSERT INTO Equipment VALUE (4, 4 ,4, 4, 4, 4, 4, 4);
+INSERT INTO Equipment VALUE (4, 4,4, 4, 4, 4, 4, 4);
