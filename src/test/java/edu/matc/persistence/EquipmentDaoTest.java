@@ -1,6 +1,7 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.Equipment;
+import edu.matc.entity.User;
 import edu.matc.entity.Weapons;
 import edu.matc.testutils.Database;
 import org.junit.jupiter.api.BeforeEach;
@@ -43,12 +44,19 @@ public class EquipmentDaoTest {
 
     @Test
     void insertSuccess() {
+        User newHunter = new User("Alaina", "sillygirl", "novice");
         Equipment newEquipment = new Equipment(1,1,1,1,1,1);
+        newEquipment.setHunter(newHunter);
+        newHunter.setArmorSet(newEquipment);
+
+
+        UserDao userDao = new UserDao();
+        userDao.insert(newHunter);
+
         equipmentDao.insert(newEquipment);
 
         newEquipment = equipmentDao.getById(5);
-        Weapons weapon = new Weapons();
-        weapon = weaponsDao.getById(newEquipment.getWeaponID());
+        Weapons weapon = weaponsDao.getById(newEquipment.getWeaponID());
 
         assertEquals("Iron SnS", weapon.getName());
     }
