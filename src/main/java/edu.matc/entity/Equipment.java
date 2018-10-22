@@ -12,6 +12,19 @@ public class Equipment {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name="UserId")
+    private User hunter;
+
+    public User getHunter() {
+        return hunter;
+    }
+
+    public void setHunter(User hunter) {
+        this.hunter = hunter;
+    }
+
     @Column(name = "WeaponID")
     private int weaponID;
     @Column(name = "HeadID")
