@@ -14,3 +14,4 @@
 | 10/15/18| Started Dao testing | 2.0 | Not done yet |
 | 10/16/18| Dao tests need major work | 2.0 | seem to be working now |
 | 10/16/18| Set AWS for indie project | 2.0 | ran into a number of back and forth with DB passwords |
+| 10/21/18| Created Database Version 2.0 and worked on tests with new format | 3.0 | got one to one annotations up and running |
