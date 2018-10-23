@@ -1,31 +1,31 @@
 # Project Plan
 
 ### Week 3
-- [ ] Create project repository on GitHub
-- [ ] Add link to list of indie projects in student repo.
-- [ ] Complete Problem Statement
-- [ ] Determine possible Web Services or APIs to use
-- [ ] Time Log!!!!!!!
+- [x] Create project repository on GitHub
+- [x] Add link to list of indie projects in student repo.
+- [x] Complete Problem Statement
+- [x] Determine possible Web Services or APIs to use
+- [x] Time Log!!!!!!!
 
 ### Week 4
-- [ ] Write project plan
-- [ ] Screen design mock ups
-- [ ] Checkpoint 1: Problem statement, project plan, screen design, time log pushed to GitHub. 
-- [ ] Time Log!!!!!!!
+- [x] Write project plan
+- [x] Screen design mock ups
+- [x] Checkpoint 1: Problem statement, project plan, screen design, time log pushed to GitHub. 
+- [x] Time Log!!!!!!!
 
 ### Week 5
-- [ ] Database designed and created
-- [ ] Create user DAO
-- [ ] Log4J
-- [ ] Time Log!!!!!!!
+- [x] Database designed and created
+- [x] Create user DAO
+- [x] Log4J
+- [x] Time Log!!!!!!!
 
 ### Week 6
-- [ ] DAO implemented with Hibernate
-- [ ] Time Log!!!!!!!
+- [x] DAO implemented with Hibernate
+- [x] Time Log!!!!!!!
 
 ### Week 7
-- [ ] Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J 
-- [ ] Time Log!!!!!!!
+- [x] Checkpoint 2: Database designed and created, at least one DAO implemented with Hibernate, DAO is unit tested, Log4J 
+- [x] Time Log!!!!!!!
 
 ### Week 8
 - [ ] Time Log!!!!!!!
