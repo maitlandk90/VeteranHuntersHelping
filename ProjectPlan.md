@@ -31,13 +31,6 @@
 - [ ] Time Log!!!!!!!
 
 ### Week 9
-- [ ] Deployment to AWS
-- [ ] Time Log!!!!!!!
-
-### Week 8
-- [ ] Time Log!!!!!!!
-
-### Week 9
 - [ ] Checkpoint 3: Deployed to AWS, JSP that displays data from the database is implemented(profiles). 
 - [ ] Time Log!!!!!!!
 
