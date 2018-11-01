@@ -22,7 +22,7 @@
 
         <c:forEach var="hunters" items="${hunter}">
             <tr>
-                <th>${hunter.username}</th>
+                <th>${hunter.UserName}</th>
             </tr>
         </c:forEach>
     </table>

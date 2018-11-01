@@ -5,8 +5,7 @@
     <a href="signIn.jsp">Sign In</a>
 </div>
 
-<form method="POST" action="searchHunters">
+<form method="GET" action="searchHunters">
     <input type="text" name="searchTerm" /><br />
-    <br />
     <input type="submit" value="Search Hunters" />
 </form>
