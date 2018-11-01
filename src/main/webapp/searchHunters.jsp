@@ -13,6 +13,7 @@
 
 <%@ include file="links.jsp"%>
 
+
 <div class="container-fluid">
     <h2>Search Results: </h2>
     <table class="table table-bordered">
@@ -20,9 +21,9 @@
                 <th>UserName</th>
             </tr>
 
-        <c:forEach var="hunters" items="${hunter}">
+        <c:forEach var="hunter" items="${hunters}">
             <tr>
-                <th>${hunter.UserName}</th>
+                <th>${hunter.username}</th>
             </tr>
         </c:forEach>
     </table>
