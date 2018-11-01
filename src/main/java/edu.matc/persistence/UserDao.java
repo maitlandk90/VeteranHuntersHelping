@@ -43,7 +43,7 @@ public class UserDao {
         CriteriaQuery<User> query = builder.createQuery(User.class);
         Root<User> root = query.from(User.class);
 
-        Expression<String> propertryPath = root.get("UserName");
+        Expression<String> propertryPath = root.get("username");
         query.where(builder.like(propertryPath, "%" + userName + "%"));
         List<User> users = session.createQuery(query).getResultList();
         session.close();
