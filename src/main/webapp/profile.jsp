@@ -12,7 +12,7 @@
 </head>
 <body>
 <%@ include file="links.jsp"%>
-
+    <p>${signedInUser.username}</p>
 
 </body>
 </html>

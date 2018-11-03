@@ -50,6 +50,24 @@ public class UserDao {
         return users;
     }
 
+    public User getUserByUserName(String userName) {
+
+        logger.debug("Searching for: {}" , userName);
+
+        Session session = sessionFactory.openSession();
+
+        CriteriaBuilder builder = session.getCriteriaBuilder();
+
+        CriteriaQuery<User> query = builder.createQuery(User.class);
+        Root<User> root = query.from(User.class);
+
+        Expression<String> propertryPath = root.get("username");
+        query.where(builder.like(propertryPath, userName));
+        User user = session.createQuery(query).getSingleResult();
+        session.close();
+        return user;
+    }
+
     public User getById(int id) {
         Session session = sessionFactory.openSession();
         User user = session.get( User.class, id );
