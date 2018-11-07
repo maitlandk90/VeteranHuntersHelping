@@ -1,5 +1,7 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <div id="links">
-    <a href="index.jsp">Home</a>
+    <a href="/indieproject/index">Home</a>
     <a href="profile.jsp?id=${signedInUser.id}">Profile</a>
     <a href="signUp.jsp">Sign Up</a>
     <a href="signIn.jsp">Sign In</a>
