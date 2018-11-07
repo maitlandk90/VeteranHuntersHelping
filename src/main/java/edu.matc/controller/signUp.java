@@ -50,24 +50,35 @@ public class signUp extends HttpServlet {
                         RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
                         dispatcher.forward(req, resp);
                     } else {
-                        req.setAttribute("signUpErrorMessage", "Passwords did not match");
-                        RequestDispatcher dispatcher = req.getRequestDispatcher("/signUp.jsp");
-                        dispatcher.forward(req, resp);
+                        forwardWithErrorMessage(req, resp, "Passwords did not match");
+//                        req.setAttribute("signUpErrorMessage", "Passwords did not match");
+//                        RequestDispatcher dispatcher = req.getRequestDispatcher("/signUp.jsp");
+//                        dispatcher.forward(req, resp);
                     }
                 } else {
-                    req.setAttribute("signUpErrorMessage", "Please fill out form fully(Missing password re-enter)");
-                    RequestDispatcher dispatcher = req.getRequestDispatcher("/signUp.jsp");
-                    dispatcher.forward(req, resp);
+                    forwardWithErrorMessage(req, resp, "Please fill out form fully(Missing password re-enter)");
+//                    req.setAttribute("signUpErrorMessage", "Please fill out form fully(Missing password re-enter)");
+//                    RequestDispatcher dispatcher = req.getRequestDispatcher("/signUp.jsp");
+//                    dispatcher.forward(req, resp);
                 }
             } else {
-                req.setAttribute("signUpErrorMessage", "Please fill out form fully(Missing password)");
-                RequestDispatcher dispatcher = req.getRequestDispatcher("/signUp.jsp");
-                dispatcher.forward(req, resp);
+                forwardWithErrorMessage(req, resp, "Please fill out form fully(Missing password)");
+//                req.setAttribute("signUpErrorMessage", "Please fill out form fully(Missing password)");
+//                RequestDispatcher dispatcher = req.getRequestDispatcher("/signUp.jsp");
+//                dispatcher.forward(req, resp);
             }
         } else {
-            req.setAttribute("signUpErrorMessage", "Please fill out form fully(Missing username)");
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/signUp.jsp");
-            dispatcher.forward(req, resp);
+            forwardWithErrorMessage(req, resp, "Please fill out form fully(Missing username)");
+//            req.setAttribute("signUpErrorMessage", "Please fill out form fully(Missing username)");
+//            RequestDispatcher dispatcher = req.getRequestDispatcher("/signUp.jsp");
+//            dispatcher.forward(req, resp);
         }
     }
+
+    public void forwardWithErrorMessage(HttpServletRequest req, HttpServletResponse resp, String msg) throws ServletException, IOException  {
+        req.setAttribute("signUpErrorMessage", msg);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/signUp.jsp");
+        dispatcher.forward(req, resp);
+    }
+
 }

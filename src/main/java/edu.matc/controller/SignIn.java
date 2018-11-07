@@ -38,19 +38,28 @@ public class SignIn extends HttpServlet {
                     RequestDispatcher dispatcher = req.getRequestDispatcher("/profile.jsp" + "?id=" + userLoggingIn.getId());
                     dispatcher.forward(req, resp);
                 } else {
-                    req.setAttribute("signInErrorMessage", "Incorrect Password");
-                    RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
-                    dispatcher.forward(req, resp);
+                    forwardWithErrorMessage(req, resp, "Incorrect Password");
+//                    req.setAttribute("signInErrorMessage", "Incorrect Password");
+//                    RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
+//                    dispatcher.forward(req, resp);
                 }
             } else {
-                req.setAttribute("signInErrorMessage", "Please Enter a Password");
-                RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
-                dispatcher.forward(req, resp);
+                forwardWithErrorMessage(req, resp, "Please Enter a Password");
+//                req.setAttribute("signInErrorMessage", "Please Enter a Password");
+//                RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
+//                dispatcher.forward(req, resp);
             }
         } else {
-            req.setAttribute("signInErrorMessage", "Please Enter a Username");
-            RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
-            dispatcher.forward(req, resp);
+            forwardWithErrorMessage(req, resp, "Please Enter a Username");
+//            req.setAttribute("signInErrorMessage", "Please Enter a Username");
+//            RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
+//            dispatcher.forward(req, resp);
         }
+    }
+
+    private void forwardWithErrorMessage(HttpServletRequest req, HttpServletResponse resp, String errorMessage) throws ServletException, IOException {
+        req.setAttribute("signInErrorMessage", errorMessage);
+        RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
+        dispatcher.forward(req, resp);
     }
 }
