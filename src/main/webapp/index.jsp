@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Hunters Helping</title>
-    <meta http-equiv="Content-Language" content="English" />
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+<%@ include file="head.jsp"%>
 
 <body>
 
@@ -24,6 +18,13 @@
             </div>
             <div class="col-sm-4">
                 <p>List of Users</p>
+                <table>
+                <c:forEach var="hunter" items="${huntersOnHome}">
+                    <tr>
+                        <th>${hunter.username}</th>
+                    </tr>
+                </c:forEach>
+                </table>
             </div>
             <div class="col-sm-4">
                 <a class="twitter-timeline" data-width="250" data-height="550" href="https://twitter.com/monsterhunter?ref_src=twsrc%5Etfw">Tweets by Monster Hunter</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
