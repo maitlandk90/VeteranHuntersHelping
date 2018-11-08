@@ -20,7 +20,7 @@
   </properties>
 
   <build>
-    <finalName>indieproject</finalName>
+    <finalName>/indieproject</finalName>
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
