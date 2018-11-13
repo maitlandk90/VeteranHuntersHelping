@@ -71,14 +71,9 @@ CREATE TABLE `Arms` (
 
 CREATE TABLE `Roles` (
   `Id` INT NOT NULL AUTO_INCREMENT,
+  `UserName` varchar(20) NOT NULL UNIQUE,
   `RoleName` varchar(15) NOT NULL,
   PRIMARY KEY (`Id`)
-);
-
-CREATE TABLE `User_Roles` (
-  `UserId` INT NOT NULL,
-  `RoleId` INT NOT NULL,
-  PRIMARY KEY (`UserId`,`RoleId`)
 );
 
 ALTER TABLE `Vet/Nov Ref Table` ADD CONSTRAINT `Vet/Nov Ref Table_fk0` FOREIGN KEY (`VeteranId`) REFERENCES `User`(`Id`);
@@ -103,6 +98,4 @@ ALTER TABLE `Messages` ADD CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFE
 
 ALTER TABLE `Messages` ADD CONSTRAINT `Messages_fk1` FOREIGN KEY (`FromUser`) REFERENCES `User`(`Id`);
 
-ALTER TABLE `User_Roles` ADD CONSTRAINT `User_Roles_fk0` FOREIGN KEY (`UserId`) REFERENCES `User`(`Id`);
-
-ALTER TABLE `User_Roles` ADD CONSTRAINT `User_Roles_fk1` FOREIGN KEY (`RoleId`) REFERENCES `Roles`(`Id`);
+ALTER TABLE `Roles` ADD CONSTRAINT `Roles_fk0` FOREIGN KEY (`UserName`) REFERENCES `User`(`UserName`);
