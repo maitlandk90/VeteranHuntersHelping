@@ -16,7 +16,7 @@
 <%@ include file="links.jsp"%>
 
 
-    <form method="POST" action="signIn">
+    <form method="POST" action="j_security_check">
         <%--<c:choose>--%>
             <%--<c:when test="${existingSessionErrorMessage}">--%>
                 <%--<p>${existingSessionErrorMessage}</p>--%>
@@ -29,9 +29,14 @@
                 <p>${signInErrorMessage}</p>
                 <c:remove var="signInErrorMessage"/>
 
-                <input type="text" name="Username" placeholder="Username"><br />
-                <input type="text" name="Password" placeholder="Password"><br />
-                <input type="submit" value="Submit">
+                <%--<input type="text" name="Username" placeholder="Username"><br />--%>
+                <%--<input type="text" name="Password" placeholder="Password"><br />--%>
+                <%--<input type="submit" value="Submit">--%>
+
+                <INPUT TYPE="TEXT" NAME="j_username" placeholder="Username">
+                <INPUT TYPE="PASSWORD" NAME="j_password" placeholder="Password">
+                <INPUT TYPE="SUBMIT" VALUE="Log In">
+
             <%--</c:otherwise>--%>
         <%--</c:choose>--%>
     </form>

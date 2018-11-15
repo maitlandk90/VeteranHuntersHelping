@@ -18,8 +18,8 @@
 
     <security-constraint>
         <web-resource-collection>
-            <web-resource-name>display</web-resource-name>
-            <url-pattern>/display.jsp</url-pattern>
+            <web-resource-name>profile</web-resource-name>
+            <url-pattern>/profile.jsp</url-pattern>
         </web-resource-collection>
         <auth-constraint>
             <role-name>User</role-name>
@@ -27,6 +27,15 @@
         </auth-constraint>
     </security-constraint>
 
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>admin</web-resource-name>
+            <url-pattern>/admin.jsp</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>Admin</role-name>
+        </auth-constraint>
+    </security-constraint>
 
     <security-role>
         <role-name>User</role-name>

@@ -1,6 +1,6 @@
 <div id="links">
     <a href="/indieproject/index">Home</a>
-    <a href="profile.jsp?id=${signedInUser.id}">Profile</a>
+    <a href="profile">Profile</a>
     <a href="signUp.jsp">Sign Up</a>
     <a href="signIn.jsp">Sign In</a>
 </div>

@@ -1,17 +1,16 @@
 <%--
   Created by IntelliJ IDEA.
   User: student
-  Date: 11/12/18
-  Time: 10:30 PM
+  Date: 11/13/18
+  Time: 8:57 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Failed SignIn</title>
+    <title>Admin Page</title>
 </head>
 <body>
-    <p>failed the SignIn</p>
-    <a href="signIn.jsp">Try Again</a>
+    <p>If you're seeing this you're an admin</p>
 </body>
 </html>
