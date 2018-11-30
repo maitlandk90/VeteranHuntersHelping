@@ -21,6 +21,7 @@
                 <table>
                 <c:forEach var="hunter" items="${huntersOnHome}">
                     <tr>
+                        <th><a href="profile?id=${hunter.id}">${hunter.username}</a></th>
                         <th>${hunter.username}</th>
                     </tr>
                 </c:forEach>

@@ -16,7 +16,7 @@
 <%@ include file="links.jsp"%>
 
 
-    <form method="POST" action="j_security_check">
+    <form action="j_security_check" method="POST">
         <%--<c:choose>--%>
             <%--<c:when test="${existingSessionErrorMessage}">--%>
                 <%--<p>${existingSessionErrorMessage}</p>--%>
