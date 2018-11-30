@@ -17,12 +17,6 @@ import java.io.IOException;
 )
 public class SignIn extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        HttpSession existingSession = req.getSession(false);
-//        if ( existingSession != null ) {
-//            req.setAttribute("existingSessionErrorMessage", "You are already signed in, please sign out first.");
-//            RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
-//            dispatcher.forward(req, resp);
-//        }
 
         if (req.getParameter("Username") != null && req.getParameter("Username") != "") {
             String userName = req.getParameter("Username");
@@ -30,30 +24,19 @@ public class SignIn extends HttpServlet {
                 String password = req.getParameter("Password");
                 UserDao checkForUser = new UserDao();
                 User userLoggingIn = checkForUser.getUserByUserName(userName);
-
                 if (userLoggingIn.getPassword().equals(password)) {
                     HttpSession userSession = req.getSession(true);
-                    userSession.setAttribute("signedInUser", userLoggingIn);
-                    //req.setAttribute("userProfilePage", userLoggingIn);
-                    RequestDispatcher dispatcher = req.getRequestDispatcher("/profile.jsp" + "?id=" + userLoggingIn.getId());
+                    userSession.setAttribute("userProfile", userLoggingIn);
+                    RequestDispatcher dispatcher = req.getRequestDispatcher("/profile");
                     dispatcher.forward(req, resp);
                 } else {
                     forwardWithErrorMessage(req, resp, "Incorrect Password");
-//                    req.setAttribute("signInErrorMessage", "Incorrect Password");
-//                    RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
-//                    dispatcher.forward(req, resp);
                 }
             } else {
                 forwardWithErrorMessage(req, resp, "Please Enter a Password");
-//                req.setAttribute("signInErrorMessage", "Please Enter a Password");
-//                RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
-//                dispatcher.forward(req, resp);
             }
         } else {
             forwardWithErrorMessage(req, resp, "Please Enter a Username");
-//            req.setAttribute("signInErrorMessage", "Please Enter a Username");
-//            RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
-//            dispatcher.forward(req, resp);
         }
     }
 
