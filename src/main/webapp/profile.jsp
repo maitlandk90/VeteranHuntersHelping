@@ -24,7 +24,12 @@
     <p>${userLeg.name}</p>
 
     <c:if test="${sameUser}">
-        <p><button type="button">Edit!</button></p>
+        <form method="POST" action="edit?id=${userProfile.id}">
+            <input type="submit" value="Edit"/>
+        </form>
+        <form method="POST" action="messages?id=${userProfile.id}">
+            <input type="submit" value="Messages"/>
+        </form>
     </c:if>
 
 </body>

@@ -14,7 +14,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                <p>Something Here</p>
+                <p>Youtube api at some point</p>
             </div>
             <div class="col-sm-4">
                 <p>List of Users</p>
@@ -22,7 +22,7 @@
                 <c:forEach var="hunter" items="${huntersOnHome}">
                     <tr>
                         <th><a href="profile?id=${hunter.id}">${hunter.username}</a></th>
-                        <th>${hunter.username}</th>
+                        <th>${hunter.rank}</th>
                     </tr>
                 </c:forEach>
                 </table>
