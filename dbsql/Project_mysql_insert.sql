@@ -34,3 +34,6 @@ INSERT INTO Equipment VALUE (1, 1, 3, 3, 3, 3, 3, 3);
 INSERT INTO Equipment VALUE (2, 2, 2, 1, 1, 1, 1, 1);
 INSERT INTO Equipment VALUE (3, 3, 1, 2, 2, 2, 2, 2);
 INSERT INTO Equipment VALUE (4, 4,4, 4, 4, 4, 4, 4);
+insert into Messages values (1,1,2,'test test');
+insert into Messages values (2,1,3,'Hey be my vet!');
+insert into Messages values (3,3,1,'Will Do :)');
