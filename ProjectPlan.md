@@ -28,26 +28,26 @@
 - [x] Time Log!!!!!!!
 
 ### Week 8
-- [ ] Time Log!!!!!!!
+- [x] Time Log!!!!!!!
 
 ### Week 9
-- [ ] Checkpoint 3: Deployed to AWS, JSP that displays data from the database is implemented(profiles). 
-- [ ] Time Log!!!!!!!
+- [x] Checkpoint 3: Deployed to AWS, JSP that displays data from the database is implemented(profiles). 
+- [x] Time Log!!!!!!!
 
 ### Week 10
-- [ ] Time Log!!!!!!!
+- [x] Time Log!!!!!!!
 
 ### Week 11 - Team project work week
-- [ ] Time Log!!!!!!!
+- [x] Time Log!!!!!!!
 
 ### Week 12 - Team project due
-- [ ] Time Log!!!!!!!
+- [x] Time Log!!!!!!!
 
 ### Week 13
-- [ ] Time Log!!!!!!!
+- [x] Time Log!!!!!!!
 
 ### Week 14
-- [ ] Time Log!!!!!!!
+- [x] Time Log!!!!!!!
 - [ ] Create final presentation
 
 ### Week 15
