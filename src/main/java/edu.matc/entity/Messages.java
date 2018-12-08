@@ -12,16 +12,19 @@ public class Messages {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
     private int id;
+
     @Column(name = "ToUser")
-    private String toUser;
+    private int toUser;
+
     @Column(name = "FromUser")
-    private String fromUser;
+    private int fromUser;
+
     @Column(name = "Message")
     private String message;
 
     public Messages(){}
 
-    public Messages(String toUser, String fromUser, String message){
+    public Messages(int toUser, int fromUser, String message){
         this.toUser = toUser;
         this.fromUser = fromUser;
         this.message = message;
@@ -35,19 +38,17 @@ public class Messages {
         this.id = id;
     }
 
-    public String getToUser() {
+    public int getToUser() {
         return toUser;
     }
 
-    public void setToUser(String toUser) {
-        this.toUser = toUser;
-    }
+    public void setToUser(int toUser) { this.toUser = toUser; }
 
-    public String getFromUser() {
+    public int getFromUser() {
         return fromUser;
     }
 
-    public void setFromUser(String fromUser) {
+    public void setFromUser(int fromUser) {
         this.fromUser = fromUser;
     }
 

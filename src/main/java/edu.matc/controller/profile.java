@@ -51,6 +51,10 @@ public class profile extends HttpServlet {
 
     }
 
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        doGet(req, resp);
+    }
+
     private void setEquipmentAndUser(User user, HttpServletRequest req) {
         Equipment userSet = user.getArmorSet();
 
