@@ -18,7 +18,17 @@
 <body>
     <%@ include file="links.jsp"%>
         <c:forEach var="message" items="${userMessages}">
-            <div><p>${message.message}</p></div>
+            <div>
+            <c:forEach var="user" items="${users}">
+                <c:if test="${message.fromUser == user.id}">
+                    <p>From:${user.username}</p>
+                    <p>${message.message}</p>
+                </c:if>
+            </c:forEach>
+                <%--<p>From:${message.fromUser}</p>--%>
+                <%--<p>To:${message.toUser}</p>--%>
+                <%--<p>${message.message}</p>--%>
+            </div>
         </c:forEach>
 </body>
 </html>

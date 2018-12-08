@@ -17,7 +17,8 @@
 
         <c:forEach var="hunter" items="${hunters}">
             <tr>
-                <th>${hunter.username}</th>
+                <th><a href="profile?id=${hunter.id}">${hunter.username}</a></th>
+                <th>${hunter.rank}</th>
             </tr>
         </c:forEach>
     </table>
