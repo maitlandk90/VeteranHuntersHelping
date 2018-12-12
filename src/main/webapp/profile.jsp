@@ -34,8 +34,8 @@
         </c:when>
 
         <c:otherwise>
-            <c:if test="${not empty noMessage}">
-                <h1>${noMessage}</h1>
+            <c:if test="${not empty errorMessage}">
+                <h1>${errorMessage}</h1>
             </c:if>
             <form method="POST" action="sendMessage?id=${userProfile.id}">
                 <textarea rows="4" cols="50" name="message" placeholder="Enter message" style="resize: none"></textarea><br />

@@ -42,11 +42,12 @@ public class sendMessage extends HttpServlet {
                 RequestDispatcher dispatcher = req.getRequestDispatcher("/profile?id=" + req.getParameter("id"));
                 dispatcher.forward(req, resp);
             } else {
-                req.setAttribute("noMessage", "Please enter a message to send to this user.");
+                req.setAttribute("errorMessage", "Please enter a message to send to this user.");
                 RequestDispatcher dispatcher = req.getRequestDispatcher("/profile?id=" + req.getParameter("id"));
                 dispatcher.forward(req, resp);
             }
         } else {
+            req.setAttribute("errorMessage", "Please sign in to send a message.");
             RequestDispatcher dispatcher = req.getRequestDispatcher("/profile?id=" + req.getParameter("id"));
             dispatcher.forward(req, resp);
         }

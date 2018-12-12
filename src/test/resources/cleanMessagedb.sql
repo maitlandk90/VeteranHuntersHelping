@@ -1,0 +1,2 @@
+DELETE FROM Messages;
+ALTER TABLE Messages AUTO_INCREMENT = 1;
