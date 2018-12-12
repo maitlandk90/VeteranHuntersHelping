@@ -3,6 +3,7 @@ package edu.matc.controller;
 import edu.matc.entity.Messages;
 import edu.matc.entity.User;
 import edu.matc.persistence.EntityDAO;
+import edu.matc.persistence.MessagesDAO;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -18,14 +19,14 @@ import java.util.List;
 )
 public class sendMessage extends HttpServlet {
 
-    EntityDAO messageDAO = new EntityDAO(Messages.class);
+    //EntityDAO messageDAO = new EntityDAO(Messages.class);
+    MessagesDAO messageDAO = new MessagesDAO();
     EntityDAO userDAO = new EntityDAO(User.class);
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String userName = req.getUserPrincipal().getName();
         String message = req.getParameter("message");
-        Messages newMessage = new Messages();
         if (req.getParameter("id") != null && userName != null) {
             if (message != null && !message.isEmpty() && !message.equals("")) {
 
@@ -33,9 +34,13 @@ public class sendMessage extends HttpServlet {
                 User fromUser = findFromUsers.get(0);
                 Integer fromUserId = fromUser.getId();
 
-                newMessage.setToUser(Integer.parseInt(req.getParameter("id")));
-                newMessage.setFromUser(fromUserId);
-                newMessage.setMessage(message);
+                Messages newMessage = new Messages(Integer.parseInt(req.getParameter("id")),
+                                                    fromUserId,
+                                                    message);
+
+//                newMessage.setToUser(Integer.parseInt(req.getParameter("id")));
+//                newMessage.setFromUser(fromUserId);
+//                newMessage.setMessage(message);
 
                 int ineserted = messageDAO.insert(newMessage);
 
