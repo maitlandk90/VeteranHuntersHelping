@@ -1,0 +1,5 @@
+[DEBUG] 2018-12-12 16:02:18.170 [http-nio-8080-exec-6] UserDao - The list of users: [edu.matc.entity.User@78f7fcec, edu.matc.entity.User@286bbeed, edu.matc.entity.User@704cf85, edu.matc.entity.User@6e7f7f8a, edu.matc.entity.User@7c007877]
+[DEBUG] 2018-12-12 16:02:20.958 [http-nio-8080-exec-9] UserDao - The list of users: [edu.matc.entity.User@28e99a5d, edu.matc.entity.User@22917981, edu.matc.entity.User@7fed982e, edu.matc.entity.User@48781635, edu.matc.entity.User@2ca74615]
+[DEBUG] 2018-12-12 16:03:09.418 [http-nio-8080-exec-7] EntityDAO - Searching for edu.matc.entity.User with username = SoundSide
+[DEBUG] 2018-12-12 16:03:10.450 [http-nio-8080-exec-8] UserDao - Searching for: SoundSide
+[DEBUG] 2018-12-12 16:03:11.331 [http-nio-8080-exec-9] EntityDAO - Searching for edu.matc.entity.Messages with toUser = 1
