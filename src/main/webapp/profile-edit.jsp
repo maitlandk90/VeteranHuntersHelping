@@ -1,22 +1,9 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: student
-  Date: 12/11/18
-  Time: 8:35 PM
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <html>
-<head>
-    <title>Edit Profile</title>
-</head>
-<body>
-<%@ include file="links.jsp"%>
+
+<%@ include file="head.jsp"%>
 
 
-    <form method="POST" action="update">
+<form method="POST" action="update">
 
         <select id="updateWeapon" name="updateWeapon">
             <c:forEach var="item" items="${allWeapons}">

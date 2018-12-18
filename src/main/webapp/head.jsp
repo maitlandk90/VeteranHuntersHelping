@@ -6,3 +6,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 </head>
+
+<body>
+
+<div id="header" class="jumbotron text-center">
+    <h1>Hunters Helping</h1>
+    <%@ include file="links.jsp"%>
+</div>

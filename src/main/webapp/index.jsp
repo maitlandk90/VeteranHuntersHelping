@@ -3,13 +3,6 @@
 
 <%@ include file="head.jsp"%>
 
-<body>
-
-    <div class="jumbotron text-center">
-        <h1>Hunters Helping</h1>
-        <img src="images/background.jpg">
-        <%@ include file="links.jsp"%>
-    </div>
 
     <div class="container">
         <div class="row">
@@ -37,4 +30,4 @@
 </body>
 
 
-<html/>
+</html>

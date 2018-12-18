@@ -1,11 +1,6 @@
-<!DOCTYPE html>
 <html>
 
 <%@ include file="head.jsp"%>
-
-<body>
-
-<%@ include file="links.jsp"%>
 
 
 <div class="container-fluid">
