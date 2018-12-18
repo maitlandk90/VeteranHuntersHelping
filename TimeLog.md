@@ -24,3 +24,4 @@
 | 11/14/18| Still Working on tomcat authentication | 6.5 |  |
 | 11/29/18| Authentication finally working, also updates to jsp pages to display information | 5.75 |  |
 | 12/5/18| Working on user messages to display and insert some test data into database | 4.75 |  |
+| 12/17/18| Begin simple styling to web pages | 5 |  |
