@@ -1,6 +1,9 @@
 <html>
 
 <%@ include file="head.jsp"%>
+<div class="container">
+    <div class="row">
+        <div id="center-div">
 
 
 <form method="POST" action="update">
@@ -40,10 +43,14 @@
                 <option value="${item.id}">${item.name}</option>
             </c:forEach>
         </select>
-
+        <br />
         <input type="submit" value="Update"/>
 
     </form>
+
+        </div>
+    </div>
+</div>
 
 
 </body>

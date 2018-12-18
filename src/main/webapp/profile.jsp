@@ -4,15 +4,14 @@
     <div class="container">
         <div class="row">
             <div id="center-div">
-                <p>${userProfile.username}</p>
-                <p>${userProfile.rank}</p>
-                <p>${userWeapon.name}</p>
-                <p>${userHead.name}</p>
-                <p>${userChest.name}</p>
-                <p>${userArm.name}</p>
-                <p>${userWaist.name}</p>
-                <p>${userLeg.name}</p>
-
+                <p>Username: ${userProfile.username}</p>
+                <p>Rank: ${userProfile.rank}</p>
+                <p><img src="images/weapons-equipment-mhw.png" alt="Weapon" width="24" height="24">${userWeapon.name}</p>
+                <p><img src="images/mhw-helm-headgear.png" alt="Head" width="24" height="24">${userHead.name}</p>
+                <p><img src="images/mhw-torso-chest-plate.png" alt="Chest" width="24" height="24">${userChest.name}</p>
+                <p><img src="images/mhw-arm-gauntlets.png" alt="Arms" width="24" height="24">${userArm.name}</p>
+                <p><img src="images/mhw-waist-belt.png" alt="Waist" width="24" height="24">${userWaist.name}</p>
+                <p><img src="images/mhw-feet-boots-greaves.png" alt="Boots" width="24" height="24">${userLeg.name}</p>
             <c:choose>
                 <c:when test="${sameUser}">
                     <form method="POST" action="edit?id=${userProfile.id}">
