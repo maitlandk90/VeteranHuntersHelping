@@ -3,3 +3,12 @@
 [DEBUG] 2018-12-12 16:03:09.418 [http-nio-8080-exec-7] EntityDAO - Searching for edu.matc.entity.User with username = SoundSide
 [DEBUG] 2018-12-12 16:03:10.450 [http-nio-8080-exec-8] UserDao - Searching for: SoundSide
 [DEBUG] 2018-12-12 16:03:11.331 [http-nio-8080-exec-9] EntityDAO - Searching for edu.matc.entity.Messages with toUser = 1
+[DEBUG] 2018-12-17 20:05:33.963 [http-nio-8080-exec-6] UserDao - The list of users: [edu.matc.entity.User@7b0a6de0, edu.matc.entity.User@323d459e, edu.matc.entity.User@5b163a24, edu.matc.entity.User@13be39a, edu.matc.entity.User@1b46cab4]
+[DEBUG] 2018-12-17 20:05:37.402 [http-nio-8080-exec-9] UserDao - The list of users: [edu.matc.entity.User@49aa6ca4, edu.matc.entity.User@1cce4daf, edu.matc.entity.User@3645ff5f, edu.matc.entity.User@57b148b1, edu.matc.entity.User@4de4d1af]
+[DEBUG] 2018-12-17 20:09:05.388 [http-nio-8080-exec-6] UserDao - The list of users: [edu.matc.entity.User@53c2c34a, edu.matc.entity.User@50e10daf, edu.matc.entity.User@7e522ec2, edu.matc.entity.User@15fc1ae6, edu.matc.entity.User@51fe0bc3]
+[DEBUG] 2018-12-17 20:09:08.418 [http-nio-8080-exec-10] UserDao - The list of users: [edu.matc.entity.User@3d0b2a6a, edu.matc.entity.User@a56970, edu.matc.entity.User@b3769b6, edu.matc.entity.User@42001377, edu.matc.entity.User@26bc3927]
+[DEBUG] 2018-12-17 20:10:39.326 [http-nio-8080-exec-10] UserDao - The list of users: [edu.matc.entity.User@67ef4d58, edu.matc.entity.User@6870e778, edu.matc.entity.User@6005953a, edu.matc.entity.User@2c96990b, edu.matc.entity.User@5e2afe32]
+[DEBUG] 2018-12-17 20:10:43.967 [http-nio-8080-exec-1] UserDao - Searching for: Sound
+[DEBUG] 2018-12-17 20:11:14.812 [http-nio-8080-exec-4] UserDao - The list of users: [edu.matc.entity.User@4db40b25, edu.matc.entity.User@5a7bed40, edu.matc.entity.User@4c74bb9b, edu.matc.entity.User@748ee698, edu.matc.entity.User@190e360f]
+[DEBUG] 2018-12-17 20:11:22.132 [http-nio-8080-exec-8] UserDao - Searching for: SoundSide
+[DEBUG] 2018-12-17 20:11:31.611 [http-nio-8080-exec-10] UserDao - The list of users: [edu.matc.entity.User@5af02d33, edu.matc.entity.User@58567727, edu.matc.entity.User@21dbec14, edu.matc.entity.User@f91b506, edu.matc.entity.User@54d38872]
