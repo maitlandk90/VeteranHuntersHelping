@@ -2,31 +2,29 @@
 
 <%@ include file="head.jsp"%>
 
+<div class="container">
+    <div class="row">
+        <div id="center-div">
 
-    <form action="j_security_check" method="POST">
-        <%--<c:choose>--%>
-            <%--<c:when test="${existingSessionErrorMessage}">--%>
-                <%--<p>${existingSessionErrorMessage}</p>--%>
-                <%--<c:remove var="existingSessionErrorMessage"/>--%>
-            <%--</c:when>--%>
-            <%--<c:otherwise>--%>
-                <p>${signUpSuccessMessage}</p>
+            <form class="form-group" action="j_security_check" method="POST">
+                <%--<p>${signUpSuccessMessage}</p>--%>
+                <c:if test="${not empty signUpSuccessMessage}">
+                    <p>${signUpSuccessMessage}</p>
+                </c:if>
                 <c:remove var="signUpSuccessMessage"/>
 
-                <p>${signInErrorMessage}</p>
+                <%--<p>${signInErrorMessage}</p>--%>
+                <c:if test="${not empty signInErrorMessage}">
+                    <p>${signInErrorMessage}</p>
+                </c:if>
                 <c:remove var="signInErrorMessage"/>
-
-                <%--<input type="text" name="Username" placeholder="Username"><br />--%>
-                <%--<input type="text" name="Password" placeholder="Password"><br />--%>
-                <%--<input type="submit" value="Submit">--%>
-
-                <INPUT TYPE="TEXT" NAME="j_username" placeholder="Username">
-                <INPUT TYPE="PASSWORD" NAME="j_password" placeholder="Password">
-                <INPUT TYPE="SUBMIT" VALUE="Log In">
-
-            <%--</c:otherwise>--%>
-        <%--</c:choose>--%>
-    </form>
-
+                <br />
+                <INPUT class="form-control" TYPE="TEXT" NAME="j_username" placeholder="Username"><br>
+                <INPUT class="form-control" TYPE="PASSWORD" NAME="j_password" placeholder="Password"><br>
+                <INPUT class="form-control" TYPE="SUBMIT" VALUE="Log In">
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>

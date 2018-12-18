@@ -2,7 +2,7 @@
     <a href="/indieproject/index">Home</a>
     <a href="profile">Profile</a>
     <a href="signUp.jsp">Sign Up</a>
-    <a href="signIn.jsp">Sign In</a>
+    <%--<a href="signIn.jsp">Sign In</a>--%>
 </div>
 
 <form method="GET" action="searchHunters">

@@ -1,3 +1,59 @@
+body {
+    background-color: black;
+}
+
+.container {
+    background-color: white;
+    height: 100vh;
+}
+
+.container a {
+    color: darkblue;
+    height: 75vh;
+}
+
 .jumbotron {
-    background-image: url("/images/background2.jpg");
+    background-image: url("../images/background3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin-bottom: 0;
+}
+.jumbotron h1 {
+    color: yellow;
+}
+.jumbotron a {
+    color: yellow;
+}
+
+#hunters{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hunter-profile-box{
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    width: calc(50% - 40px);
+}
+
+#center-div {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#messages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#message-box {
+    margin: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+    width: 90%;
 }

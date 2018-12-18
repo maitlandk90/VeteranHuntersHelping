@@ -1,20 +1,24 @@
 <html>
 
     <%@ include file="head.jsp"%>
-
-        <c:forEach var="message" items="${userMessages}">
-            <div>
-            <c:forEach var="user" items="${users}">
-                <c:if test="${message.fromUser == user.id}">
-                    <p>From:${user.username}</p>
-                    <p>${message.message}</p>
-                </c:if>
-            </c:forEach>
-                <%--<p>From:${message.fromUser}</p>--%>
-                <%--<p>To:${message.toUser}</p>--%>
-                <%--<p>${message.message}</p>--%>
+    <div class="container">
+        <div class="row">
+            <div id="center-div">
+                <div id="messages">
+                    <c:forEach var="message" items="${userMessages}">
+                        <c:forEach var="user" items="${users}">
+                            <c:if test="${message.fromUser == user.id}">
+                                <div id="message-box">
+                                <p>From:${user.username}</p>
+                                <p>${message.message}</p>
+                                </div>
+                            </c:if>
+                        </c:forEach>
+                    </c:forEach>
+                </div>
             </div>
-        </c:forEach>
+        </div>
+    </div>
 </body>
 </html>
 <script>
