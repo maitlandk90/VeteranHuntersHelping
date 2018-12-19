@@ -25,3 +25,6 @@
 | 11/29/18| Authentication finally working, also updates to jsp pages to display information | 5.75 |  |
 | 12/5/18| Working on user messages to display and insert some test data into database | 4.75 |  |
 | 12/17/18| Begin simple styling to web pages | 5 |  |
+| 12/19/18| New Users added to role table | 1.5 |  |
+| 12/19/18| Update to README for github | 0.5 |  |
+| 12/19/18| Update to entites for Project LomBok | 0.5 |  |
