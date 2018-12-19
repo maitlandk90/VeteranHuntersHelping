@@ -12,3 +12,29 @@ monsters. Somewhere during its set up the service proceeded to fail and many use
 with. My goal for this project to create website that will allow users to sign up and manage their own profiles to find a hunter
 that matches their own style. I believe this will allow the project to continue in a more manageable way, and hopefully this 
 will bring more hunters into the World of the Monster Hunter series!
+
+
+###Project Technologies/Techniques
+* Security/Authentication
+  * Tomcat's JDBC Realm Authentication
+  * Admin role: Will have access to admin page to remove users
+  * User role: Create and manage an equipment set to display to other hunters
+* Database
+  * MySQL
+  * Store users their equipment and their roles. 
+  * Store all data for the equipment and user messages
+* ORM Framework
+  * Hibernate 5
+* Dependency Management
+  * Maven
+* Web Services consumed using Java
+  * Twitter API
+* CSS 
+  * Bootstrap and some styling
+* Data Validation
+  * Explore Hibernate's validation
+* Logging
+  * Configurable logging using Log4J2
+* Unit Testing
+  * JUnit tests to achieve code coverage 
+* IDE: IntelliJ IDEA
