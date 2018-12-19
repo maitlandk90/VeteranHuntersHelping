@@ -201,3 +201,92 @@
 [DEBUG] 2018-12-19 11:31:23.843 [http-nio-8080-exec-1] EntityDAO - Searching for edu.matc.entity.Messages with toUser = 1
 [DEBUG] 2018-12-19 11:31:32.204 [http-nio-8080-exec-2] UserDao - Searching for: soundside
 [DEBUG] 2018-12-19 11:31:33.579 [http-nio-8080-exec-4] UserDao - The list of users: [edu.matc.entity.User@36869252, edu.matc.entity.User@b3d246, edu.matc.entity.User@66017655, edu.matc.entity.User@702fc34a, edu.matc.entity.User@7239db1f]
+[ERROR] 2018-12-19 11:37:31.616 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:37:31.632 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:37:35.424 [main] EquipmentDao - The Hunters equipment set by id: null
+[ERROR] 2018-12-19 11:37:35.590 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:37:35.604 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:37:35.830 [main] EquipmentDao - The list of hunters equipment sets []
+[ERROR] 2018-12-19 11:37:35.870 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:37:35.883 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:37:35.894 [main] EquipmentDao - The Hunters equipment set by id: null
+[ERROR] 2018-12-19 11:37:36.033 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:37:36.039 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:37:36.045 [main] EquipmentDao - The Hunters equipment set by id: null
+[ERROR] 2018-12-19 11:37:36.074 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:37:36.089 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:37:36.124 [main] UserDao - Inserting new user: edu.matc.entity.User@69d6a7cd
+[DEBUG] 2018-12-19 11:37:36.137 [main] EquipmentDao - Inserting new hunter Equipment edu.matc.entity.Equipment@2a1debfa
+[DEBUG] 2018-12-19 11:37:36.144 [main] EquipmentDao - The Hunters equipment set by id: null
+[DEBUG] 2018-12-19 11:41:27.515 [http-nio-8080-exec-6] UserDao - The list of users: [edu.matc.entity.User@2d36a8ef, edu.matc.entity.User@4ed0cfc7, edu.matc.entity.User@baa323c, edu.matc.entity.User@44d72a43]
+[DEBUG] 2018-12-19 11:41:29.552 [http-nio-8080-exec-9] UserDao - The list of users: [edu.matc.entity.User@3ca8124f, edu.matc.entity.User@16dd4f1e, edu.matc.entity.User@410586c6, edu.matc.entity.User@3256fe3]
+[DEBUG] 2018-12-19 11:41:32.148 [http-nio-8080-exec-10] UserDao - The list of users: [edu.matc.entity.User@6cce6945, edu.matc.entity.User@61ce3ec5, edu.matc.entity.User@640f8275, edu.matc.entity.User@779b2add]
+[DEBUG] 2018-12-19 11:41:37.617 [http-nio-8080-exec-3] UserDao - Searching for: soundside
+[DEBUG] 2018-12-19 11:41:42.201 [http-nio-8080-exec-5] EntityDAO - Searching for edu.matc.entity.Messages with toUser = 1
+[DEBUG] 2018-12-19 11:41:43.643 [http-nio-8080-exec-7] UserDao - Searching for: soundside
+[DEBUG] 2018-12-19 11:41:55.103 [http-nio-8080-exec-9] UserDao - Inserting new user: edu.matc.entity.User@1f6e240
+[DEBUG] 2018-12-19 11:41:55.131 [http-nio-8080-exec-9] EquipmentDao - Inserting new hunter Equipment edu.matc.entity.Equipment@743010ad
+[DEBUG] 2018-12-19 11:41:55.168 [http-nio-8080-exec-9] UserDao - The list of users: [edu.matc.entity.User@38350275, edu.matc.entity.User@2da3bcfc, edu.matc.entity.User@5a64f322, edu.matc.entity.User@54bea937, edu.matc.entity.User@44882f7f]
+[DEBUG] 2018-12-19 11:41:57.183 [http-nio-8080-exec-1] UserDao - Searching for: soundside
+[DEBUG] 2018-12-19 11:41:58.436 [http-nio-8080-exec-2] EntityDAO - Searching for edu.matc.entity.Messages with toUser = 1
+[DEBUG] 2018-12-19 11:41:59.651 [http-nio-8080-exec-3] UserDao - Searching for: soundside
+[DEBUG] 2018-12-19 11:42:01.095 [http-nio-8080-exec-4] UserDao - The list of users: [edu.matc.entity.User@41aa2b68, edu.matc.entity.User@5b96a5ad, edu.matc.entity.User@60cb5dd4, edu.matc.entity.User@fe0c8d5, edu.matc.entity.User@1f01432a]
+[DEBUG] 2018-12-19 11:42:01.971 [http-nio-8080-exec-6] UserDao - Returning user by id:5 User: edu.matc.entity.User@4e33f70f
+[DEBUG] 2018-12-19 11:42:03.386 [http-nio-8080-exec-5] UserDao - The list of users: [edu.matc.entity.User@55394d15, edu.matc.entity.User@4aada90f, edu.matc.entity.User@ce60886, edu.matc.entity.User@a573e24, edu.matc.entity.User@15998b9e]
+[DEBUG] 2018-12-19 11:49:49.871 [main] MessagesDAO - The message by id edu.matc.entity.Messages@65004ff6
+[DEBUG] 2018-12-19 11:49:49.913 [main] MessagesDAO - The message by id null
+[DEBUG] 2018-12-19 11:49:49.966 [main] MessagesDAO - New Message Inserted edu.matc.entity.Messages@14fc5d40
+[DEBUG] 2018-12-19 11:49:49.972 [main] MessagesDAO - The message by id edu.matc.entity.Messages@7bb004b8
+[DEBUG] 2018-12-19 11:49:49.978 [main] MessagesDAO - New Message Inserted edu.matc.entity.Messages@17d2ed1b
+[DEBUG] 2018-12-19 11:49:49.982 [main] MessagesDAO - The message by id edu.matc.entity.Messages@6b474074
+[DEBUG] 2018-12-19 11:49:50.021 [main] MessagesDAO - The message by id edu.matc.entity.Messages@57aa341b
+[DEBUG] 2018-12-19 11:50:51.388 [main] MessagesDAO - The message by id edu.matc.entity.Messages@22d9c961
+[DEBUG] 2018-12-19 11:50:51.429 [main] MessagesDAO - The message by id null
+[DEBUG] 2018-12-19 11:50:51.479 [main] MessagesDAO - New Message Inserted edu.matc.entity.Messages@70242f38
+[DEBUG] 2018-12-19 11:50:51.484 [main] MessagesDAO - The message by id edu.matc.entity.Messages@127f9161
+[DEBUG] 2018-12-19 11:50:51.490 [main] MessagesDAO - New Message Inserted edu.matc.entity.Messages@3b0ee03a
+[DEBUG] 2018-12-19 11:50:51.495 [main] MessagesDAO - The message by id edu.matc.entity.Messages@3b7b05a8
+[DEBUG] 2018-12-19 11:50:51.531 [main] MessagesDAO - The message by id edu.matc.entity.Messages@562457e1
+[ERROR] 2018-12-19 11:51:23.480 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:51:23.507 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:51:26.350 [main] EquipmentDao - The Hunters equipment set by id: null
+[ERROR] 2018-12-19 11:51:26.401 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:51:26.408 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:51:26.682 [main] EquipmentDao - The list of hunters equipment sets []
+[ERROR] 2018-12-19 11:51:26.744 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:51:26.758 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:51:26.760 [main] EquipmentDao - The Hunters equipment set by id: null
+[ERROR] 2018-12-19 11:51:26.793 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:51:26.803 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:51:26.806 [main] EquipmentDao - The Hunters equipment set by id: null
+[ERROR] 2018-12-19 11:51:26.844 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:51:26.854 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:51:26.886 [main] UserDao - Inserting new user: edu.matc.entity.User@1f6d27cc
+[DEBUG] 2018-12-19 11:51:26.898 [main] EquipmentDao - Inserting new hunter Equipment edu.matc.entity.Equipment@540a903b
+[DEBUG] 2018-12-19 11:51:26.903 [main] EquipmentDao - The Hunters equipment set by id: null
+[ERROR] 2018-12-19 11:52:51.046 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:52:51.078 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:52:53.522 [main] EquipmentDao - The Hunters equipment set by id: null
+[ERROR] 2018-12-19 11:52:53.571 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:52:53.580 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:52:53.828 [main] EquipmentDao - The list of hunters equipment sets []
+[ERROR] 2018-12-19 11:52:53.854 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:52:53.882 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:52:53.894 [main] EquipmentDao - The Hunters equipment set by id: null
+[ERROR] 2018-12-19 11:52:53.930 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:52:53.943 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:52:53.951 [main] EquipmentDao - The Hunters equipment set by id: null
+[ERROR] 2018-12-19 11:52:53.980 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Cannot delete or update a parent row: a foreign key constraint fails (`test_VetHunHelping`.`Messages`, CONSTRAINT `Messages_fk0` FOREIGN KEY (`ToUser`) REFERENCES `User` (`Id`))
+[ERROR] 2018-12-19 11:52:53.989 [main] Database - com.mysql.jdbc.exceptions.jdbc4.MySQLIntegrityConstraintViolationException: Duplicate entry '1' for key 'PRIMARY'
+[DEBUG] 2018-12-19 11:55:39.550 [main] EquipmentDao - The Hunters equipment set by id: edu.matc.entity.Equipment@65bb9029
+[DEBUG] 2018-12-19 11:55:39.590 [main] EquipmentDao - The Hunters equipment set by id: null
+[DEBUG] 2018-12-19 11:55:39.950 [main] EquipmentDao - The list of hunters equipment sets [edu.matc.entity.Equipment@57a48985, edu.matc.entity.Equipment@1ab6718, edu.matc.entity.Equipment@3910fe11, edu.matc.entity.Equipment@460510aa]
+[DEBUG] 2018-12-19 11:55:40.024 [main] EquipmentDao - The Hunters equipment set by id: edu.matc.entity.Equipment@4682eba5
+[DEBUG] 2018-12-19 11:55:40.029 [main] WeaponsDao - The weapon by id: 3 weapon: Xeno Insect Glaive
+[DEBUG] 2018-12-19 11:55:40.132 [main] EquipmentDao - The Hunters equipment set by id: edu.matc.entity.Equipment@56d93692
+[DEBUG] 2018-12-19 11:55:40.139 [main] EquipmentDao - Updating hunter Equipment edu.matc.entity.Equipment@56d93692
+[DEBUG] 2018-12-19 11:55:40.150 [main] EquipmentDao - The Hunters equipment set by id: edu.matc.entity.Equipment@7c1812b3
+[DEBUG] 2018-12-19 11:55:40.240 [main] UserDao - Inserting new user: edu.matc.entity.User@376e7531
+[DEBUG] 2018-12-19 11:55:40.248 [main] EquipmentDao - Inserting new hunter Equipment edu.matc.entity.Equipment@7ae9a33a
+[DEBUG] 2018-12-19 11:55:40.258 [main] EquipmentDao - The Hunters equipment set by id: edu.matc.entity.Equipment@71dfcf21
+[DEBUG] 2018-12-19 11:55:40.263 [main] WeaponsDao - The weapon by id: 1 weapon: Iron SnS
