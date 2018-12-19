@@ -35,9 +35,10 @@ public class WeaponsDao {
 
     public Weapons getById(int id) {
         Session session = sessionFactory.openSession();
-        Weapons armorSet = session.get( Weapons.class, id );
+        Weapons weapons = session.get( Weapons.class, id );
+        logger.debug("The weapon by id: " + id  + " weapon: " + weapons.getName());
         session.close();
-        return armorSet;
+        return weapons;
     }
 
     public int insert(Weapons weapons) {
@@ -61,6 +62,7 @@ public class WeaponsDao {
     public void saveOrUpdate(Weapons weapons) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
+        logger.debug("Updating weapon: " + weapons);
         session.saveOrUpdate(weapons);
         transaction.commit();
         session.close();

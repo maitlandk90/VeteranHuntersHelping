@@ -35,6 +35,7 @@ public class MessagesDAO {
     public Messages getById(int id) {
         Session session = sessionFactory.openSession();
         Messages messageSet = session.get( Messages.class, id );
+        logger.debug("The message by id " + messageSet);
         session.close();
         return messageSet;
     }
@@ -44,6 +45,7 @@ public class MessagesDAO {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         id = (int)session.save(message);
+        logger.debug("New Message Inserted " + message);
         transaction.commit();
         session.close();
         return id;

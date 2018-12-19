@@ -71,6 +71,7 @@ public class UserDao {
     public User getById(int id) {
         Session session = sessionFactory.openSession();
         User user = session.get( User.class, id );
+        logger.debug("Returning user by id:" + id + " User: " + user);
         session.close();
         return user;
     }
@@ -80,6 +81,7 @@ public class UserDao {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         id = (int)session.save(user);
+        logger.debug("Inserting new user: " + user);
         transaction.commit();
         session.close();
         return id;
@@ -96,6 +98,7 @@ public class UserDao {
     public void saveOrUpdate(User user) {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
+        logger.debug("Updating user: " + user);
         session.saveOrUpdate(user);
         transaction.commit();
         session.close();

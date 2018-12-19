@@ -37,6 +37,7 @@ public class EquipmentDao {
     public Equipment getById(int id) {
         Session session = sessionFactory.openSession();
         Equipment armorSet = session.get( Equipment.class, id );
+        logger.debug("The Hunters equipment set by id: " + armorSet);
         session.close();
         return armorSet;
     }
@@ -46,6 +47,7 @@ public class EquipmentDao {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         id = (int)session.save(armorSet);
+        logger.debug("Inserting new hunter Equipment " + armorSet);
         transaction.commit();
         session.close();
         return id;
@@ -63,6 +65,7 @@ public class EquipmentDao {
         Session session = sessionFactory.openSession();
         Transaction transaction = session.beginTransaction();
         session.saveOrUpdate(armorSet);
+        logger.debug("Updating hunter Equipment " + armorSet);
         transaction.commit();
         session.close();
     }
