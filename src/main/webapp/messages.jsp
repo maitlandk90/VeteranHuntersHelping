@@ -17,6 +17,7 @@
                     </c:forEach>
                 </div>
             </div>
+            <a href="profile">Back To Profile</a>
         </div>
     </div>
 </body>
