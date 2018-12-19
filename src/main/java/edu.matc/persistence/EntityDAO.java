@@ -126,6 +126,8 @@ public class EntityDAO<T> {
         transaction = session.beginTransaction();
         id = (int)session.save(entity);
         logger.trace("insert(T): Inserting the <T> BusinessEntity.");
+        transaction.commit();
+        session.close();
         return id;
     }
 

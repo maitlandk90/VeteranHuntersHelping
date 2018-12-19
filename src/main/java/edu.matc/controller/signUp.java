@@ -2,7 +2,9 @@ package edu.matc.controller;
 
 
 import edu.matc.entity.Equipment;
+import edu.matc.entity.Roles;
 import edu.matc.entity.User;
+import edu.matc.persistence.EntityDAO;
 import edu.matc.persistence.EquipmentDao;
 import edu.matc.persistence.UserDao;
 
@@ -24,6 +26,7 @@ public class signUp extends HttpServlet {
 
         UserDao userDao = new UserDao();
         EquipmentDao armorSet = new EquipmentDao();
+        EntityDAO<Roles> rolesDao = new EntityDAO(Roles.class);
 
         if (req.getParameter("Username") != null && req.getParameter("Username") != "") {
             String userName = req.getParameter("Username");
@@ -39,8 +42,14 @@ public class signUp extends HttpServlet {
                         newArmorSet.setHunter(newUser);
                         userDao.insert(newUser);
                         armorSet.insert(newArmorSet);
-                        req.setAttribute("signUpSuccessMessage", "Sign In to begin Hunting!");
-                        RequestDispatcher dispatcher = req.getRequestDispatcher("/signIn.jsp");
+
+                        Roles newUserRole = new Roles();
+                        newUserRole.setRolename("User");
+                        newUserRole.setUsername(newUser.getUsername());
+                        rolesDao.insert(newUserRole);
+
+                        //req.setAttribute("signUpSuccessMessage", "Sign In to begin Hunting!");
+                        RequestDispatcher dispatcher = req.getRequestDispatcher("/index");
                         dispatcher.forward(req, resp);
                     } else {
                         forwardWithErrorMessage(req, resp, "Passwords did not match");
