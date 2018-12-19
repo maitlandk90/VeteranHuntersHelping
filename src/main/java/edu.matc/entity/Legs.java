@@ -1,5 +1,7 @@
 package edu.matc.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -11,31 +13,13 @@ public class Legs {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
+    @Getter
+    @Setter
     private int id;
 
     @Column(name = "Name")
-    private String name;
+    @Getter
+    @Setter private String name;
 
-    public Legs(){}
-
-    public Legs(String name) {
-        this.name = name;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
 
 }

@@ -1,5 +1,9 @@
 package edu.matc.entity;
 
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -11,33 +15,33 @@ public class Equipment {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
+    @Getter
+    @Setter
     private int id;
 
     @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="UserId")
-    private User hunter;
-
-    public User getHunter() {
-        return hunter;
-    }
-
-    public void setHunter(User hunter) {
-        this.hunter = hunter;
-    }
+    @Getter
+    @Setter private User hunter;
 
     @Column(name = "WeaponID")
-    private int weaponID;
+    @Getter
+    @Setter private int weaponID;
     @Column(name = "HeadID")
-    private int headID;
+    @Getter
+    @Setter private int headID;
     @Column(name = "ArmsID")
-    private int armsID;
+    @Getter
+    @Setter private int armsID;
     @Column(name = "ChestID")
-    private int chestID;
+    @Getter
+    @Setter private int chestID;
     @Column(name = "WaistID")
-    private int waistID;
+    @Getter
+    @Setter private int waistID;
     @Column(name = "LegsID")
-    private int legsID;
-
+    @Getter
+    @Setter private int legsID;
 
     public Equipment() {}
 
@@ -47,62 +51,6 @@ public class Equipment {
         this.armsID = armsID;
         this.chestID = chestID;
         this.waistID = waistID;
-        this.legsID = legsID;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getWeaponID() {
-        return weaponID;
-    }
-
-    public void setWeaponID(int weaponID) {
-        this.weaponID = weaponID;
-    }
-
-    public int getHeadID() {
-        return headID;
-    }
-
-    public void setHeadID(int headID) {
-        this.headID = headID;
-    }
-
-    public int getArmsID() {
-        return armsID;
-    }
-
-    public void setArmsID(int armsID) {
-        this.armsID = armsID;
-    }
-
-    public int getChestID() {
-        return chestID;
-    }
-
-    public void setChestID(int chestID) {
-        this.chestID = chestID;
-    }
-
-    public int getWaistID() {
-        return waistID;
-    }
-
-    public void setWaistID(int waistID) {
-        this.waistID = waistID;
-    }
-
-    public int getLegsID() {
-        return legsID;
-    }
-
-    public void setLegsID(int legsID) {
         this.legsID = legsID;
     }
 

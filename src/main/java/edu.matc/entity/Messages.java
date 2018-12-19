@@ -1,5 +1,7 @@
 package edu.matc.entity;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -11,16 +13,21 @@ public class Messages {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "native")
     @GenericGenerator(name = "native", strategy = "native")
+    @Getter
+    @Setter
     private int id;
 
     @Column(name = "ToUser")
-    private int toUser;
+    @Getter
+    @Setter private int toUser;
 
     @Column(name = "FromUser")
-    private int fromUser;
+    @Getter
+    @Setter private int fromUser;
 
     @Column(name = "Message")
-    private String message;
+    @Getter
+    @Setter private String message;
 
     public Messages(){}
 
@@ -30,34 +37,5 @@ public class Messages {
         this.message = message;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public int getToUser() {
-        return toUser;
-    }
-
-    public void setToUser(int toUser) { this.toUser = toUser; }
-
-    public int getFromUser() {
-        return fromUser;
-    }
-
-    public void setFromUser(int fromUser) {
-        this.fromUser = fromUser;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
 
 }
