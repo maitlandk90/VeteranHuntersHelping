@@ -28,3 +28,4 @@
 | 12/19/18| New Users added to role table | 1.5 |  |
 | 12/19/18| Update to README for github | 0.5 |  |
 | 12/19/18| Update to entites for Project LomBok | 0.5 |  |
+| 12/19/18| Small Util fixes around all files | 1.0 |  |
