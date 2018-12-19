@@ -14,7 +14,7 @@ that matches their own style. I believe this will allow the project to continue 
 will bring more hunters into the World of the Monster Hunter series!
 
 
-###Project Technologies/Techniques
+### Project Technologies/Techniques
 * Security/Authentication
   * Tomcat's JDBC Realm Authentication
   * Admin role: Will have access to admin page to remove users
