@@ -290,3 +290,33 @@
 [DEBUG] 2018-12-19 11:55:40.248 [main] EquipmentDao - Inserting new hunter Equipment edu.matc.entity.Equipment@7ae9a33a
 [DEBUG] 2018-12-19 11:55:40.258 [main] EquipmentDao - The Hunters equipment set by id: edu.matc.entity.Equipment@71dfcf21
 [DEBUG] 2018-12-19 11:55:40.263 [main] WeaponsDao - The weapon by id: 1 weapon: Iron SnS
+[DEBUG] 2018-12-19 12:02:08.853 [http-nio-8080-exec-6] UserDao - The list of users: [edu.matc.entity.User@7e76431a, edu.matc.entity.User@1187ec74, edu.matc.entity.User@ff52303, edu.matc.entity.User@5bb9211b]
+[DEBUG] 2018-12-19 12:02:11.198 [http-nio-8080-exec-9] UserDao - The list of users: [edu.matc.entity.User@4ccd5539, edu.matc.entity.User@dfd0a91, edu.matc.entity.User@34d9c5d7, edu.matc.entity.User@6ec18929]
+[DEBUG] 2018-12-19 12:02:35.834 [http-nio-8080-exec-5] UserDao - Inserting new user: edu.matc.entity.User@3441615a
+[DEBUG] 2018-12-19 12:02:35.862 [http-nio-8080-exec-5] EquipmentDao - Inserting new hunter Equipment edu.matc.entity.Equipment@17533c7d
+[DEBUG] 2018-12-19 12:02:35.903 [http-nio-8080-exec-5] UserDao - The list of users: [edu.matc.entity.User@1eeb4a00, edu.matc.entity.User@7222cd28, edu.matc.entity.User@556ddec2, edu.matc.entity.User@6f983365, edu.matc.entity.User@2b67dfdc]
+[DEBUG] 2018-12-19 12:02:43.303 [http-nio-8080-exec-8] UserDao - Searching for: bubblyBow
+[DEBUG] 2018-12-19 12:02:46.473 [http-nio-8080-exec-9] UserDao - Returning user by id:5 User: edu.matc.entity.User@1cd7ca61
+[DEBUG] 2018-12-19 12:03:00.092 [http-nio-8080-exec-1] UserDao - Searching for: bubblyBow
+[DEBUG] 2018-12-19 12:03:00.128 [http-nio-8080-exec-1] EquipmentDao - Updating hunter Equipment edu.matc.entity.Equipment@1652aec6
+[DEBUG] 2018-12-19 12:03:00.162 [http-nio-8080-exec-1] UserDao - Searching for: bubblyBow
+[DEBUG] 2018-12-19 12:04:37.511 [http-nio-8080-exec-3] UserDao - The list of users: [edu.matc.entity.User@23b60109, edu.matc.entity.User@1817127c, edu.matc.entity.User@5075f5f6, edu.matc.entity.User@156d699e, edu.matc.entity.User@6408c73]
+[DEBUG] 2018-12-19 12:05:20.209 [http-nio-8080-exec-6] UserDao - The list of users: [edu.matc.entity.User@1ebc036, edu.matc.entity.User@2ce6d625, edu.matc.entity.User@557ebb8d, edu.matc.entity.User@272cd20d, edu.matc.entity.User@26e5de65]
+[DEBUG] 2018-12-19 12:05:21.925 [http-nio-8080-exec-9] UserDao - The list of users: [edu.matc.entity.User@3388b70f, edu.matc.entity.User@5374d709, edu.matc.entity.User@712cd5ff, edu.matc.entity.User@6502bd49, edu.matc.entity.User@13c45e29]
+[DEBUG] 2018-12-19 12:06:18.693 [http-nio-8080-exec-5] UserDao - Inserting new user: edu.matc.entity.User@74902c48
+[DEBUG] 2018-12-19 12:06:18.724 [http-nio-8080-exec-5] EquipmentDao - Inserting new hunter Equipment edu.matc.entity.Equipment@3ad2e63a
+[DEBUG] 2018-12-19 12:06:18.789 [http-nio-8080-exec-5] UserDao - The list of users: [edu.matc.entity.User@2a000aac, edu.matc.entity.User@738822a5, edu.matc.entity.User@425e5214, edu.matc.entity.User@5b45c368, edu.matc.entity.User@43956e4e, edu.matc.entity.User@736b4ada]
+[DEBUG] 2018-12-19 12:06:29.426 [http-nio-8080-exec-7] UserDao - Searching for: imthenewguy
+[DEBUG] 2018-12-19 12:06:32.269 [http-nio-8080-exec-9] UserDao - Returning user by id:6 User: edu.matc.entity.User@5f649c62
+[DEBUG] 2018-12-19 12:06:43.198 [http-nio-8080-exec-10] UserDao - Searching for: imthenewguy
+[DEBUG] 2018-12-19 12:06:43.225 [http-nio-8080-exec-10] EquipmentDao - Updating hunter Equipment edu.matc.entity.Equipment@1ee759d8
+[DEBUG] 2018-12-19 12:06:43.260 [http-nio-8080-exec-10] UserDao - Searching for: imthenewguy
+[DEBUG] 2018-12-19 12:06:46.341 [http-nio-8080-exec-1] EntityDAO - Searching for edu.matc.entity.Messages with toUser = 6
+[DEBUG] 2018-12-19 12:06:48.904 [http-nio-8080-exec-3] UserDao - Searching for: imthenewguy
+[DEBUG] 2018-12-19 12:06:50.669 [http-nio-8080-exec-4] UserDao - The list of users: [edu.matc.entity.User@44fdd7f1, edu.matc.entity.User@27bffc54, edu.matc.entity.User@73b88fc0, edu.matc.entity.User@620af4, edu.matc.entity.User@2a0a0756, edu.matc.entity.User@728f131f]
+[DEBUG] 2018-12-19 12:06:54.263 [http-nio-8080-exec-5] UserDao - Searching for: sound
+[DEBUG] 2018-12-19 12:06:56.278 [http-nio-8080-exec-8] UserDao - Returning user by id:1 User: edu.matc.entity.User@7ebf9d48
+[DEBUG] 2018-12-19 12:07:05.405 [http-nio-8080-exec-9] EntityDAO - Searching for edu.matc.entity.User with username = imthenewguy
+[DEBUG] 2018-12-19 12:07:05.409 [http-nio-8080-exec-9] MessagesDAO - New Message Inserted edu.matc.entity.Messages@4bdf88a
+[DEBUG] 2018-12-19 12:07:05.421 [http-nio-8080-exec-9] UserDao - Returning user by id:1 User: edu.matc.entity.User@1c7d75f7
+[DEBUG] 2018-12-19 12:07:07.765 [http-nio-8080-exec-2] UserDao - The list of users: [edu.matc.entity.User@11522987, edu.matc.entity.User@108018b0, edu.matc.entity.User@7de08185, edu.matc.entity.User@1c52612b, edu.matc.entity.User@1c4c6d37, edu.matc.entity.User@c99b396]
