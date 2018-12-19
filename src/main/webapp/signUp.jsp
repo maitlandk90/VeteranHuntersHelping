@@ -14,8 +14,8 @@
                 <c:remove var="signUpErrorMessage"/>
                     <br />
                 <input class="form-control" type="text" name="Username" id="Username" placeholder="Username"><br />
-                <input class="form-control" type="text" name="Password" id="Password" placeholder="Password"><br />
-                <input class="form-control" type="text" name="RePassword" id="RePassword" placeholder="Re-enter Password"><br />
+                <input class="form-control" type="password" name="Password" id="Password" placeholder="Password"><br />
+                <input class="form-control" type="password" name="RePassword" id="RePassword" placeholder="Re-enter Password"><br />
                 <input class="form-control" type="submit" value="Submit"/>
             </form>
         </div>
