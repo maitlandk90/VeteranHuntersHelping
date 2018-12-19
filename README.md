@@ -35,6 +35,8 @@ will bring more hunters into the World of the Monster Hunter series!
   * Explore Hibernate's validation
 * Logging
   * Configurable logging using Log4J2
+* Independent Research Topic/s
+  * Project Lombok
 * Unit Testing
   * JUnit tests to achieve code coverage 
 * IDE: IntelliJ IDEA
