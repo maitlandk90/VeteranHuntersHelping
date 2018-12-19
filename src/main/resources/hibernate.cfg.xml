@@ -36,6 +36,8 @@
         <mapping class="edu.matc.entity.Messages"/>
         <mapping class="edu.matc.entity.Equipment"/>
 
+        <mapping class="edu.matc.entity.Roles"/>
+
 
     </session-factory>
 
